@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+
+<h1>inicia seción</h1>
+<h2>Login</h2>
+    <from method="post">
+        <label fro="email">correo electronico:</label>
+        <imput type="email"id="email name="email Required><br>
+        <label for="password">contraseña:</label>
+        <imput type="password"id="password" name=password Required><br>
+        <button type="submit">inicia secion</button>
+    </from>
+    <p>No tiens una cuenta? <a herf="{{urel_for("register") }}>registrate aqui</a></p>
+{%endblock%}
